@@ -38,37 +38,24 @@ $("textarea").each
         // console.log($(element.id))
 });
 
+// var button = $('.saveBtn')
+// // button.on("click", storeToDo);
+
+// // function storeToDo(event) 
 
 
+// $('.saveBtn').on('click', function(event) {
+//    console.log(event)
+// } 
 
+    
 
+    // $(this).attr('aria-pressed', $(this).attr('aria-pressed') === 'false' ? 'true' : 'false');
+    // $('html').attr('data-theme', $('html').attr('data-theme') === 'dark' ? 'light' : 'dark');
 
+    // if ('false' === $(this).attr('aria-pressed')) {
+    //     localStorage.setItem('themeChoice', 'dark');
+    // } else {
+    //     localStorage.setItem('themeChoice', 'light');
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  $('.saveBtn').on('click', function () {
-//     // We add the event handler, alert("Hello World"), to the callback function.
-//    console.log(this);
-//    $(this)
-//    console.log($(this.sibling))
-//   });
