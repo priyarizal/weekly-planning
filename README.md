@@ -18,11 +18,23 @@
 
 # Significant Code Snippets
 
+LocalStorage
+
+````$('.saveBtn').on('click', function(event) {
+
+    var key =$(this).siblings("textarea").attr("id")
+    var value =$(this).siblings("textarea").val()
+
+    localStorage.setItem(key, value);
+
 ```$('#9').val(localStorage.getItem('9'));
 // $('#10').val(localStorage.getItem('10'));
 
-$("textarea").each(function() {
- $(this).val(localStorage.getItem($(this).attr("id")))
- console.log($(this).attr("id"))
+```$("textarea").each(function() {
+ ```$(this).val(localStorage.getItem($(this).attr("id")))
 
-```
+
+
+# Screen Shots for Design Highlight
+
+````
