@@ -5,16 +5,23 @@ var time
 //put it in the currentday div
 setInterval(() => {
     time = moment().format("dddd, MMMM Do YYYY, h:mm:ss a")
-    $('#currentDay').html(time);
-}, 1000);
+    $('#currentDay').html(time); 
+    
+    //triggering the function I wrote on lines 18-69
+    updateTime()
 
-// moment().format("ha");
-// console.log(moment().format("ha"));
+}, 1000); 
+
 
 //creating my array of office hours
-var timeBlocks = [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
 
-var currentHour = 14
+function updateTime() {
+
+    //commented this timeblock line out because I am getting the hour from the ID of the element
+    // var timeBlocks = [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+
+    //setting a dynamic time so the colorblocks move with time 
+    var currentHour = moment().format('H');
 
 //grabbing each textarea ID from my html to run this function
 $("textarea").each 
@@ -38,11 +45,14 @@ $("textarea").each
         // console.log($(element.id))
 });
 
-
+//passing a function to listen for a click on savebutton
 $('.saveBtn').on('click', function(event) {
+
+    //defining my key and my value to call it on localStorage
 
     var key =$(this).siblings("textarea").attr("id")
     var value =$(this).siblings("textarea").val()
+
     // console.log($(this).siblings("textarea").val())
     // console.log($(this).siblings("textarea").attr("id"))
 
@@ -50,6 +60,7 @@ $('.saveBtn').on('click', function(event) {
     
 })
 
+//setting a 'this' so I can loop through the siblings
 
 $('#9').val(localStorage.getItem('9'));
 // $('#10').val(localStorage.getItem('10'));
@@ -58,6 +69,11 @@ $("textarea").each(function() {
  $(this).val(localStorage.getItem($(this).attr("id")))
  console.log($(this).attr("id"))
 })
+
+};
+
+
+
 
 
 
