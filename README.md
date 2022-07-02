@@ -54,6 +54,11 @@ LocalStorage
 - Sean New (tutor)
 - Jehyun Jung (tutor)
 
+# Contact Me
+
+- www.linkedin.com/in/priya-r-822271110
+- https://github.com/priyarizal
+
 # License
 
 - MIT
