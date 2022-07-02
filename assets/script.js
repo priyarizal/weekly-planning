@@ -45,6 +45,7 @@ $("textarea").each
         // console.log($(element.id))
 });
 
+}; 
 //passing a function to listen for a click on savebutton
 $('.saveBtn').on('click', function(event) {
 
@@ -70,7 +71,6 @@ $("textarea").each(function() {
  console.log($(this).attr("id"))
 })
 
-};
 
 
 

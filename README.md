@@ -36,3 +36,21 @@ LocalStorage
 ````
 
 # Screen Shots for Design Highlight
+
+![dailycalender](./assets/1..png)
+![dailycalender](./assets/2.png)
+
+# Gif for Demoing Functionality
+
+![dailycalender](./assets/Work%20Day%20Scheduler.gif)
+
+# Contributors
+
+- UCB bootcamp instructor : Jerome Channete
+
+- Sean New (tutor)
+- Jehyun Jung (tutor)
+
+# License
+
+- MIT
