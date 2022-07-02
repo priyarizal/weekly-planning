@@ -33,8 +33,6 @@ LocalStorage
 ```$("textarea").each(function() {
  ```$(this).val(localStorage.getItem($(this).attr("id")))
 
-
+````
 
 # Screen Shots for Design Highlight
-
-````
