@@ -21,7 +21,8 @@ function updateTime() {
     // var timeBlocks = [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
 
     //setting a dynamic time so the colorblocks move with time 
-    var currentHour = moment().format('H');
+    var currentHour = 11
+    // var currentHour = moment().format('H');
 
 //grabbing each textarea ID from my html to run this function
 $("textarea").each 

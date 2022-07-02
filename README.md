@@ -40,7 +40,7 @@ LocalStorage
 
 # Screen Shots for Design Highlight
 
-![dailycalender](./assets/1..png)
+![dailycalender](./assets/1.png)
 ![dailycalender](./assets/2.png)
 
 # Gif for Demoing Functionality
