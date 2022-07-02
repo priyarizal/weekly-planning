@@ -38,24 +38,35 @@ $("textarea").each
         // console.log($(element.id))
 });
 
-// var button = $('.saveBtn')
-// // button.on("click", storeToDo);
 
-// // function storeToDo(event) 
+$('.saveBtn').on('click', function(event) {
+
+    var key =$(this).siblings("textarea").attr("id")
+    var value =$(this).siblings("textarea").val()
+    // console.log($(this).siblings("textarea").val())
+    // console.log($(this).siblings("textarea").attr("id"))
+
+    localStorage.setItem(key, value);
+    
+})
 
 
-// $('.saveBtn').on('click', function(event) {
-//    console.log(event)
-// } 
+$('#9').val(localStorage.getItem('9'));
+// $('#10').val(localStorage.getItem('10'));
+
+$("textarea").each(function() {
+ $(this).val(localStorage.getItem($(this).attr("id")))
+ console.log($(this).attr("id"))
+})
+
+
+
+
+
+
 
     
 
-    // $(this).attr('aria-pressed', $(this).attr('aria-pressed') === 'false' ? 'true' : 'false');
-    // $('html').attr('data-theme', $('html').attr('data-theme') === 'dark' ? 'light' : 'dark');
-
-    // if ('false' === $(this).attr('aria-pressed')) {
-    //     localStorage.setItem('themeChoice', 'dark');
-    // } else {
-    //     localStorage.setItem('themeChoice', 'light');
+    
     
 
