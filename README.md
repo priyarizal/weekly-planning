@@ -16,6 +16,9 @@
 
 # Deployed Link and URL
 
+- https://priyarizal.github.io/weekly-planning/
+- https://github.com/priyarizal/weekly-planning
+
 # Significant Code Snippets
 
 LocalStorage
